@@ -7,9 +7,6 @@
  Jedeme retro cernobile, dnes barvy nepotrebujeme.
 */
 
-html {
-    background-color: white;
-}
 
 body {
     margin: 0;
@@ -20,262 +17,27 @@ body {
     line-height: 1.6;
 }
 
-.celek {
-    background-color: white;
-}
 
-.hlavicka {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.322)), url(images/island-hlavicka.jpg);
-    background-size: cover;
-    height: 500px;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-.perex {
-    padding: 10px;
-    margin: 20px;
-}
-
-.perex::after {
-    content: "______";
-    font-weight: bold;
-    display: block;
-    transform: translate(0, 100%);
-}
-
-.autor {
-    font-style: italic;
-    padding: 10px;
-    margin: 20px;
-}
+/* HLAVICKA */
 
 .titulek {
     font-family: 'Raleway', serif;
-    font-size: 55px;
-    padding: 20px;
-    margin: 0;
-}
-
-.menu li {
-    display: inline-block;
-    width: 100%;
-    
-}
-
-.menu {
-    padding: 10px;
-    margin: 45px;
-}
-
-.menu a {
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color:  #afafaf;
-    text-align: center;
-    padding: 7px;
-    font-family: 'Raleway', serif;
-    font-weight: 200;
-    border-bottom: 1px  #afafaf solid;
-    
-}
-
-.uvod, .proc, .covidet, .zaver, .paticka {
-    padding: 0px 30px 40px 30px;
-}
-
-.vsebezfoto img {
-    width: 100%;
-}
-
-.vsebezfoto .popisek {
-    color: #afafaf;
-    text-align: center;
-    font-family: 'Raleway', serif;
-    font-size: 14px;
-    margin: 5px;
-}
-
-.vsebezfoto a {
-    color: #afafaf;
-}
-
-.galerie .popisek {
-    color: #afafaf;
-    text-align: center;
-    font-family: 'Raleway', serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: bold; 
-}
-
-.galerie .popisek-copy {
-    font-weight: 200;
-    font-size: 13px;
-}
-
-.galerie a {
-    color: #afafaf;
-}
-
-h2 {
-    font-family: 'Raleway', serif;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.foto img {
-    width: 100%;
-}
-
-.vsebezfoto h2 {
-    margin: 20px 0px 0px 0px;
-}
-
-.fotogalerie h2 {
-    padding: 0px 30px 10px 30px;
-    margin: 20px 0px 0px 0px;
-}
-
-.proc h2::after {
-    content: "_____";
-    font-weight: bold;
-    display: block;
-    color: rgb(100, 182, 197);
-    transform: translate(0, -40%);
-    font-family: sans-serif;
-}
-
-.covidet h2::after {
-    content: "_____";
-    font-weight: bold;
-    display: block;
-    color: rgb(100, 182, 197);
-    transform: translate(0, -40%);
-    font-family: sans-serif;
-}
-
-.fotogalerie h2::after {
-    content: "_____";
-    font-weight: bold;
-    display: block;
-    color: rgb(100, 182, 197);
-    transform: translate(0, -40%);
-    font-family: sans-serif;
-}
-
-.paticka {
-    color: #afafaf;
-    font-size: 13px;
-}
-
-.paticka a {
-    color: #afafaf;
-}
-
-.foto {
-    padding-bottom: 10px;
-}
-
-.paticka {
-    margin-top: 30px;
-}
-
-@media (min-width: 500px) {
-
-    .menu {
-        display: flex;
-        border-top: 1px  #afafaf solid;
-        border-bottom: 1px  #afafaf solid;
-        padding: 0;
-        align-items: center;
-    }
-
-    .menu a {
-        border-bottom: 0;
-    }
-
-    .menu li {
-        border-right: 1px  #afafaf solid;
-    }
-
-    .menu li:last-child {
-        border-right: 0;
-    }
-
-    .perex, .autor {
-        font-size: 18px;
-    }
-
-    .titulek {
-        font-size: 60px;
-    }
-
-    .menu a {
-        font-size: 15px;
-    }
-
-    h2 {
-        font-size: 35px;
-    }
-
-    .galerie {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .foto {
-        width: 50%;
-        
-        overflow: hidden; 
-        padding: 0;
-        margin: 0;
-        
-    }
-
-    .foto:hover .popisek {
-        transform: translate(0, -100%);
-        transition: 0.5s;
-    }
-    
-    .foto:hover img {
-        transform: scale(1.1);
-        transition: 0.5s;
-    }
-    
-    .foto img {
-        display: block; 
-        transition: 0.5s;
-    }
-
-    .foto .popisek {
-        background-color: rgba(0, 0, 0, 0.397); 
-        color: white;
-        text-align: center;
-        padding: 0;
-        transition: 0.5s;
-    
-    }
-
-    .galerie .popisek {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .popisek-copy {
-        font-size: 12px;
-    }
-    
-
 }
 
 
+/* MENU */
 
 
 
 
+/* OBSAH */
 
+
+
+
+/* FOTOGALERIE */
+
+
+
+
+/* PATICKA */
