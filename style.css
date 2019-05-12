@@ -20,24 +20,298 @@ body {
 
 /* HLAVICKA */
 
+.hlavicka {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.322)), url(images/island-hlavicka.jpg);
+    background-size: cover;
+    min-height: 400px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
 .titulek {
     font-family: 'Raleway', serif;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.autor {
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.perex::after {
+    content: "______";
+    display: block;
+    font-weight: bold;
+    transform: translate(0, 50%);
+}
+
+/* MENU */
+.menu {
+    margin: 0px 0px 20px 0px;
+    padding: 30px;
+}
+
+.menu li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #afafaf;
+}
+
+.menu a {
+    color: #afafaf;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Raleway', serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
 }
 
 
-/* MENU */
-
-
-
-
 /* OBSAH */
+.celek {
+    background-color: white;
+}
 
+.celek img {
+    width: 100%;
+}
 
+.celek h2 {
+    font-family: 'Raleway', serif;
+    font-size: 30px;
+}
+
+.uvod, .proc, .covidet, .covidet2, .zaver {
+    padding: 15px 30px;
+}
+
+.fotogalerie {
+    padding: 0px 30px;
+}
+
+.celek .popisek {
+    font-size: 14px;
+    text-align: center;
+    color: #afafaf;
+    font-family: 'Raleway', serif;
+}
+
+.celek .popisek a {
+    color: #afafaf;
+}
+
+.celek h2::after {
+    content: "________";
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+    color: rgb(95, 208, 216);
+    font-family: sans-serif;
+    transform: translate(-10%, -30%);
+}
 
 
 /* FOTOGALERIE */
 
+.galerie .popisek {
+    font-size: 16px;
+    font-weight: bolder;
+}
 
+.galerie .popisek-copy {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.galerie {
+    padding-bottom: 20px;
+}
 
 
 /* PATICKA */
+
+.paticka {
+    font-size: 14px;
+    color: #afafaf;
+    padding: 15px 30px;
+}
+
+.paticka a {
+    color: #afafaf;
+}
+
+@media (min-width:500px) {
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        border-top: 1px solid #afafaf;
+        border-right: 1px solid #afafaf;
+    }
+
+    .menu li:last-child {
+        border-right: 0;
+    }
+
+    .titulek {
+        font-size: 60px;
+    }
+
+    .celek h2 {
+        font-size: 40px;
+    }
+
+    .obrazek1, .obrazek2, .obrazek3 {
+        position: relative;
+    }
+
+    .obrazek1 p,
+    .obrazek2 p, 
+    .obrazek3 p {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+
+    .obrazek1 .popisek,
+    .obrazek2 .popisek,
+    .obrazek3 .popisek {
+        font-size: 12px;
+        color: white;
+    }
+    
+    .obrazek1 .popisek a,
+    .obrazek2 .popisek a,
+    .obrazek3 .popisek a {
+        color: white;
+        font-size: 12px;
+    }
+
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foto {
+        width: 50%;
+        height: 0;
+        box-sizing: content-box;
+        padding-bottom: 28%;
+        overflow: hidden;
+    }
+
+    .foto:hover .popisek {
+        transform: translate(0, -100%); 
+        transition: 0.5s;
+    }
+
+    .galerie .popisek {
+        margin: 0;
+    }
+
+    .foto:hover img {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .foto img {
+        display: block; 
+        transition: 0.5s;
+    }
+
+    .galerie {
+        padding-bottom: 0px;
+    }
+
+    .foto .popisek {
+        background-color: rgba(0, 0, 0, 0.397); 
+        color: white;
+        text-align: center;
+        padding: 0px;
+        transition: 0.5s;
+        font-size: 14px;
+    
+    }
+
+    .foto .popisek-copy {
+        font-size: 12px;
+    }
+
+    .foto .popisek-copy a {
+        color: white;
+    }
+
+    .paticka {
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media (min-width:1000px) {
+
+
+    .celek {
+        width: 960px;
+        display: block;
+        margin: auto;
+        transform: translate(0, -1.2%);
+    }
+
+    .celek h2::after {
+        content: "________";
+        font-size: 30px;
+        display: block;
+        font-weight: bold;
+        color: rgb(95, 208, 216);
+        font-family: sans-serif;
+        transform: translate(-3.3%, 0%);
+    }
+
+    .foto {
+        width: 33.333%;
+        padding-bottom: 18%;
+    }
+
+    .foto:hover .popisek {
+        transform: translate(0, -110%); 
+    }
+
+    .menu {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 30px 40px;
+        height: 375.6px;
+    }
+
+    .menu li {
+        border: 0;
+        border-bottom: 1px solid #afafaf;
+    }
+
+    .menu a {
+        text-align: left;
+    }
+
+    .proc {
+        width: 80%;
+    }
+
+    .covidet, .covidet2 {
+        margin-left: 288px;
+    }
+
+    .paticka {
+        display: block;
+        margin: auto;
+        width: 960px;
+        padding: 0;
+    }
+
+}
